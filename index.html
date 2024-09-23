@@ -157,35 +157,36 @@
     <!-- Sección de redes sociales - Fijado a la derecha -->
 
     <div class="sociales">
-        <a href="#" target="_blank"
-          ><img
-            src="assets/icons/icons8-twitter-circled.gif"
-            alt="Twitter"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="https://www.instagram.com/virtual.hache?igsh=MWpoamRndjlweWJiMQ==" target="_blank"
-          ><img
-            src="assets/icons/icons8-instagram.gif"
-            alt="Instagram"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="https://www.linkedin.com/in/gabriel-hernandez-0206a9227/" target="_blank"
-          ><img
-            src="assets/icons/icons8-linkedin-circled.gif"
-            alt="Linkedin"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a href="https://github.com/Gabih14" target="_blank"
-          ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-        /></a>
+        <a href="#" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif" alt="Twitter" loading="lazy"
+                class="socicon" /></a>
+        <a href="https://www.instagram.com/virtual.hache?igsh=MWpoamRndjlweWJiMQ==" target="_blank"><img
+                src="assets/icons/icons8-instagram.gif" alt="Instagram" loading="lazy" class="socicon" /></a>
+        <a href="https://www.linkedin.com/in/gabriel-hernandez-0206a9227/" target="_blank"><img
+                src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+        <a href="https://github.com/Gabih14" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github"
+                class="socicon" /></a>
+    </div>
 
     <!-- Vuelve al comienzo  -->
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"><img src="assets/icons/icons8-upward-arrow.gif"
+            class="socicon flecha-arriba" alt="desplazarse-hacia-arriba" /></i>
+    <script>
+        // funcionalidad de desplazar hacia arriba
+        const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
 
+        desplazarArriba.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+            }); 
+        });
+    </script>
     <!-- Sección Footer  -->
+    <footer>
+        <p class="copy">&copy; Copyright 2024</p>
 
+    </footer>
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
 
