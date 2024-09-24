@@ -307,3 +307,106 @@ footer {
     width: 3rem;
     height: 3rem;
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 720px) {
+
+    /* los cambios se reflejan en una pantalla con un ancho de 720px y e inferior */
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    /* HERO */
+    .hero {
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero img {
+        height: 37.5rem;
+        width: 30rem;
+    }
+
+    .bio {
+        margin-top: -7rem;
+        width: 20.5rem;
+    }
+
+    /* MÁS SOBRE MÍ */
+    .mas-sobre {
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+    }
+
+    .mas-sobre h2 {
+        text-align: center;
+    }
+
+    .mas-sobre p {
+        text-align: justify;
+    }
+
+    /* HABILIDADES */
+    .icon {
+        width: 5.875rem;
+        height: 5.25rem;
+    }
+
+    /* PROYECTOS */
+    .contenedor-de-proyectos {
+        flex-direction: column;
+    }
+
+    .tarjeta-de-proyectos {
+        width: 20.875rem;
+    }
+
+    /* CONTACTO */
+    .formulario-contacto-contenedor {
+        max-width: 23.75rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero img {
+      height: 37.5rem;
+      width: 23rem;
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .contenedor-proyecto {
+      width: 17.875rem;
+    }
+  
+    .contenedor-formulario-de-contacto{
+      max-width: 17.75rem;
+    }
+  } 
