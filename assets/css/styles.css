@@ -215,6 +215,19 @@ nav ul li {
 
 /* ---HABILIDADES--- */
 
+/* Clases para animaciones de aparición y desaparición */
+.appear {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.disappear {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
 .habilidades {
     background-color: #66CC99;
     display: flex; /* Usar flexbox para centrar el contenido */
