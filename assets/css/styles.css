@@ -686,9 +686,15 @@ footer p{
     .formulario-contacto-contenedor {
         max-width: 23.75rem;
     }
+
+    .card{
+        height: 250px;
+    }
 }
 
 @media screen and (max-width: 420px) {
-
+    .card{
+        height: 250px;
+    }
    
 }
