@@ -741,7 +741,7 @@ footer p {
     }
 
     .card {
-        height: 250px;
+        height: 200px;
     }
 
     .sociales {
@@ -758,11 +758,23 @@ footer p {
     .contacto {
         padding: 0px;
     }
+    .socials-list .icon-content:hover .tooltip {
+        
+        visibility: hidden;
+        
+    }
+    .desplazarse-hacia-arriba {
+        padding-right: 10px;
+    }
 }
 
 @media screen and (max-width: 420px) {
+    .desplazarse-hacia-arriba {
+        padding-right: 10px;
+    }
     .card {
-        height: 250px;
+        height: 270px;
+        width: 210px;
     }
 
     .sociales {
@@ -775,9 +787,17 @@ footer p {
 
         flex-direction: row;
     }
+    .socials-list .icon-content:hover .tooltip {
+        
+        visibility: hidden;
+        
+    }
 
     .contacto {
         padding: 30px;
     }
 
+    .contenedor-de-proyectos {
+        gap: 30px;
+    }
 }
