@@ -21,26 +21,32 @@
 /* Sección Sobre Mi */
 .about-section {
     background-color: #003366;
-    color: white; /* Color del texto */
+    color: white;
+    /* Color del texto */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    min-height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
     padding: 20px 20px 100px;
 }
 
 /* Título */
 .about-title {
-    font-size: 2.5rem; /* Tamaño del título en dispositivos móviles */
-    margin-bottom: 40px; /* Espacio debajo del título */
+    font-size: 2.5rem;
+    /* Tamaño del título en dispositivos móviles */
+    margin-bottom: 40px;
+    /* Espacio debajo del título */
 }
 
 /* Títulos en pantallas grandes */
 @media (min-width: 768px) {
     .about-title {
-        font-size: 3.5rem; /* Tamaño del título en pantallas grandes */
-        margin-bottom: 60px; /* Aumentar el espacio debajo del título */
+        font-size: 3.5rem;
+        /* Tamaño del título en pantallas grandes */
+        margin-bottom: 60px;
+        /* Aumentar el espacio debajo del título */
     }
 }
 
@@ -48,12 +54,13 @@
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px; /* Espacio entre cards */
+    gap: 50px;
+    /* Espacio entre cards */
     justify-content: center;
 }
 
 /* Cards */
-/* From Uiverse.io by gharsh11032000 */ 
+/* From Uiverse.io by gharsh11032000 */
 .card {
     position: relative;
     width: 300px;
@@ -67,20 +74,20 @@
     perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card svg {
+}
+
+.card svg {
     width: 48px;
     fill: #333;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover {
+}
+
+.card:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  }
-  
-  .card__content {
+}
+
+.card__content {
     position: absolute;
     top: 0;
     left: 0;
@@ -92,35 +99,36 @@
     transform: rotateX(-90deg);
     transform-origin: bottom;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover .card__content {
+}
+
+.card:hover .card__content {
     transform: rotateX(0deg);
-  }
-  
-  .card__title {
+}
+
+.card__title {
     margin: 0;
     font-size: 24px;
     color: #333;
     font-weight: 700;
-  }
-  
-  .card:hover svg {
+}
+
+.card:hover svg {
     scale: 0;
-  }
-  
-  .card__description {
+}
+
+.card__description {
     margin: 10px 0 0;
     font-size: 14px;
     color: #777;
     line-height: 1.4;
-  }
-  
+}
+
 
 /* Títulos e íconos */
 
 .card-icon {
-    font-size: 48px; /* Íconos compactos */
+    font-size: 48px;
+    /* Íconos compactos */
     color: #333;
 }
 
@@ -134,25 +142,30 @@
 .card p {
     margin: 3px 0;
     font-size: 15px;
-    line-height: 1.2; /* Menor interlineado */
+    line-height: 1.2;
+    /* Menor interlineado */
     color: #555;
 }
 
 /* Responsividad */
 @media (max-width: 768px) {
     .card-container {
-        padding: 40px 65px; /* Más padding en los costados para evitar superposición */
+        padding: 40px 65px;
+        /* Más padding en los costados para evitar superposición */
     }
 
     .card {
-        width: 100%; /* Ocupan todo el ancho disponible */
-        padding: 20px; /* Más padding interno para mayor legibilidad */
+        width: 100%;
+        /* Ocupan todo el ancho disponible */
+        padding: 20px;
+        /* Más padding interno para mayor legibilidad */
     }
 }
 
 @media (max-width: 480px) {
     .card-container {
-        padding: 40px 75px; /* Aseguramos que no haya superposición con íconos laterales */
+        padding: 40px 75px;
+        /* Aseguramos que no haya superposición con íconos laterales */
     }
 }
 
@@ -267,33 +280,48 @@ nav ul li {
 
 .habilidades {
     background-color: #66CC99;
-    display: flex; /* Usar flexbox para centrar el contenido */
-    flex-direction: column; /* Alinear en columna */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla menos la altura del navbar */
+    display: flex;
+    /* Usar flexbox para centrar el contenido */
+    flex-direction: column;
+    /* Alinear en columna */
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    min-height: 100vh;
+    /* Ocupa toda la altura de la pantalla menos la altura del navbar */
     text-align: center;
 }
 
 .header-habilidades {
     margin-bottom: 1rem;
     color: black;
-    font-size: 2.5rem; /* Tamaño del título, ajusta según sea necesario */
+    font-size: 2.5rem;
+    /* Tamaño del título, ajusta según sea necesario */
 }
 
 /* Contenedor de habilidades */
 .contenedor-habilidades {
-    display: flex; /* Usar flexbox para alinear las imágenes */
-    flex-direction: column; /* Asegurarse de que los sets se apilen verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
+    display: flex;
+    /* Usar flexbox para alinear las imágenes */
+    flex-direction: column;
+    /* Asegurarse de que los sets se apilen verticalmente */
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
 }
 
-.first-set, .second-set {
-    display: flex; /* Usar flexbox para las imágenes dentro de cada set */
-    flex-wrap: wrap; /* Permitir que las imágenes se envuelvan */
-    justify-content: center; /* Centrar las imágenes */
-    margin: 10px 0; /* Espacio entre los sets */
+.first-set,
+.second-set {
+    display: flex;
+    /* Usar flexbox para las imágenes dentro de cada set */
+    flex-wrap: wrap;
+    /* Permitir que las imágenes se envuelvan */
+    justify-content: center;
+    /* Centrar las imágenes */
+    margin: 10px 0;
+    /* Espacio entre los sets */
 }
 
 .contenedor-habilidades img {
@@ -316,30 +344,41 @@ nav ul li {
 /* ---PROYECTOS--- */
 .proyectos {
     background-color: #003366;
-    display: flex; /* Usar flexbox para centrar el contenido */
-    flex-direction: column; /* Alinear en columna */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Alinear el contenido hacia arriba */
-    min-height: calc(100vh - 80px); /* Ocupa toda la altura de la pantalla menos la altura del navbar */
-    padding-top: 20px; /* Espacio superior para el contenido */
+    display: flex;
+    /* Usar flexbox para centrar el contenido */
+    flex-direction: column;
+    /* Alinear en columna */
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Alinear el contenido hacia arriba */
+    min-height: calc(100vh - 80px);
+    /* Ocupa toda la altura de la pantalla menos la altura del navbar */
+    padding-top: 20px;
+    /* Espacio superior para el contenido */
     text-align: center;
 }
 
 .titulos-de-proyectos {
     text-align: center;
     margin-bottom: 1rem;
-    color: white; /* Cambiar color del título si es necesario */
+    color: white;
+    /* Cambiar color del título si es necesario */
 }
+
 .titulo-principal-proyectos {
     text-align: center;
-    font-size: 2.5rem; /* Tamaño del título, ajusta según sea necesario */
+    font-size: 2.5rem;
+    /* Tamaño del título, ajusta según sea necesario */
     margin-bottom: 1rem;
-    color: white; /* Cambiar color del título si es necesario */
+    color: white;
+    /* Cambiar color del título si es necesario */
 }
 
 .contenedor-de-proyectos {
     display: flex;
-    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan en pantallas más pequeñas */
+    flex-wrap: wrap;
+    /* Permitir que las tarjetas se envuelvan en pantallas más pequeñas */
     align-items: center;
     justify-content: center;
 }
@@ -355,8 +394,10 @@ nav ul li {
 }
 
 .project-pic {
-    width: 100%; /* Hacer que la imagen ocupe el 100% del ancho de la tarjeta */
-    height: auto; /* Mantener la proporción de la imagen */
+    width: 100%;
+    /* Hacer que la imagen ocupe el 100% del ancho de la tarjeta */
+    height: auto;
+    /* Mantener la proporción de la imagen */
 }
 
 .contenedor-de-proyectos p {
@@ -366,28 +407,38 @@ nav ul li {
 .detalle-de-proyectos {
     margin-bottom: var(--bottom-margin);
 }
+
 /* CONTACTO */
 .contacto {
     background-color: #006699;
-    display: flex; /* Usar flexbox para centrar el contenido */
-    flex-direction: column; /* Alinear en columna */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
-    min-height: calc(100vh - 80px); /* Ocupa toda la altura de la pantalla menos la altura del navbar */
-    padding: 20px; /* Espaciado interno */
+    display: flex;
+    /* Usar flexbox para centrar el contenido */
+    flex-direction: column;
+    /* Alinear en columna */
+    align-items: center;
+    /* Centrar horizontalmente */
+    justify-content: center;
+    /* Centrar verticalmente */
+    min-height: calc(100vh - 80px);
+    /* Ocupa toda la altura de la pantalla menos la altura del navbar */
+    padding: 20px;
+    /* Espaciado interno */
     text-align: center;
 }
 
 .contacto h2 {
     margin-bottom: var(--bottom-margin-2);
-    font-size: 2.5rem; /* Tamaño del título, ajusta según sea necesario */
-    color: white; /* Cambiar color del título si es necesario */
+    font-size: 2.5rem;
+    /* Tamaño del título, ajusta según sea necesario */
+    color: white;
+    /* Cambiar color del título si es necesario */
 }
 
 .formulario-contacto-contenedor {
     max-width: 40.75rem;
     margin: 0 auto;
-    padding: 1rem; /* Aumentar el padding para mejor apariencia */
+    padding: 1rem;
+    /* Aumentar el padding para mejor apariencia */
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     background-color: white;
@@ -406,7 +457,8 @@ nav ul li {
 
 .formulario-contacto-contenedor .input-field {
     width: 100%;
-    padding: 10px; /* Ajustar el padding */
+    padding: 10px;
+    /* Ajustar el padding */
     border-radius: 5px;
     border: 2px outset var(--primary-color);
     font-size: 0.875rem;
@@ -541,9 +593,10 @@ footer {
     background-color: black;
     padding: 1.25rem;
     text-align: center;
-    
+
 }
-footer p{
+
+footer p {
     color: white;
 }
 
@@ -666,7 +719,7 @@ footer p{
     }
 
 
-  
+
     /* HABILIDADES */
     .icon {
         width: 5.875rem;
@@ -687,14 +740,44 @@ footer p{
         max-width: 23.75rem;
     }
 
-    .card{
+    .card {
         height: 250px;
+    }
+
+    .sociales {
+        margin-top: 1rem;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .socials-list {
+
+        flex-direction: row;
+    }
+
+    .contacto {
+        padding: 0px;
     }
 }
 
 @media screen and (max-width: 420px) {
-    .card{
+    .card {
         height: 250px;
     }
-   
+
+    .sociales {
+        margin-top: 1rem;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .socials-list {
+
+        flex-direction: row;
+    }
+
+    .contacto {
+        padding: 30px;
+    }
+
 }
