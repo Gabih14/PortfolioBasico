@@ -118,11 +118,6 @@
   
 
 /* Títulos e íconos */
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
 
 .card-icon {
     font-size: 48px; /* Íconos compactos */
@@ -167,13 +162,6 @@ html {
     scroll-padding-top: 95px;
     /* background-color: #003366; */
     /* Ajusta el valor según la altura de tu navbar */
-}
-
-/* Variables fin */
-.letra-primaria {
-    color: var(--primary-color);
-    font-weight: bold;
-    /* font-size: 1.5em; */
 }
 
 .letra-secundaria {
@@ -677,25 +665,8 @@ footer p{
         width: 30rem;
     }
 
-    .bio {
-        margin-top: -7rem;
-        width: 20.5rem;
-    }
 
-    /* MÁS SOBRE MÍ */
-    .mas-sobre {
-        margin-top: 2rem;
-        padding: 1rem 3.5rem;
-    }
-
-    .mas-sobre h2 {
-        text-align: center;
-    }
-
-    .mas-sobre p {
-        text-align: justify;
-    }
-
+  
     /* HABILIDADES */
     .icon {
         width: 5.875rem;
@@ -718,20 +689,6 @@ footer p{
 }
 
 @media screen and (max-width: 420px) {
-    .hero img {
-        height: 37.5rem;
-        width: 23rem;
-    }
 
-    .bio {
-        width: 18.3rem;
-    }
-
-    .contenedor-proyecto {
-        width: 17.875rem;
-    }
-
-    .contenedor-formulario-de-contacto {
-        max-width: 17.75rem;
-    }
+   
 }
