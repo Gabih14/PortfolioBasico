@@ -18,6 +18,52 @@
     --transition: 0.3s;
 }
 
+/* CV */
+.cv-section {
+    background-color: #006699;
+    color: white;
+    /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    padding: 20px 20px 100px;
+}
+
+/* Título */
+.cv-title {
+    font-size: 2.5rem;
+    /* Tamaño del título en dispositivos móviles */
+    margin-bottom: 40px;
+    /* Espacio debajo del título */
+}
+
+/* Style buttons */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: RoyalBlue;
+  }
+
+/* Títulos en pantallas grandes */
+@media (min-width: 768px) {
+    .cv-title {
+        font-size: 3.5rem;
+        /* Tamaño del título en pantallas grandes */
+        margin-bottom: 60px;
+        /* Aumentar el espacio debajo del título */
+    }
+}
 /* Sección Sobre Mi */
 .about-section {
     background-color: #003366;
@@ -343,7 +389,7 @@ nav ul li {
 
 /* ---PROYECTOS--- */
 .proyectos {
-    background-color: #003366;
+    background-color: #006699;
     display: flex;
     /* Usar flexbox para centrar el contenido */
     flex-direction: column;
@@ -410,7 +456,7 @@ nav ul li {
 
 /* CONTACTO */
 .contacto {
-    background-color: #006699;
+    background-color: #003366 ;
     display: flex;
     /* Usar flexbox para centrar el contenido */
     flex-direction: column;
